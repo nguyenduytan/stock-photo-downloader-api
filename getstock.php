@@ -8,7 +8,7 @@ if(isset($_POST["surl"])){
 	$surl = $_POST["surl"];
 
 	// Get from API
-	$apiurl = "https://api.duytan.tech/?email=".$apiemail."&token=".$apitoken."&url=".urlencode($surl);
+	$apiurl = "https://api.sharedvn.net/?email=".$apiemail."&token=".$apitoken."&url=".urlencode($surl);
 	$res = @file_get_contents($apiurl);
 	$json = json_decode($res);
 
